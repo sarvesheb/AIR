@@ -4,6 +4,7 @@ Flask
 Pillow
 
  This is a very simple REST API built using Flask(Python) for Image Manipulation created for AIR internship
+ 
  The lightweight server can be initiated by executing the python file
  
  python apiX.py
