@@ -16,7 +16,7 @@ Pillow
  POST /upload - This method accepts an image and a tag. We try resizing it to 800x800 but still maintaining the original aspect ratio. A 300x300 image is cropped out exactly from the centre and the image is compressed if it exceeds 512KB and finally saved]
  
  GET supports the following operations:
- 
+/  - This is the homepage 
 image/<id>/resize?height={value}&width={value} - returns a resized image with appropriate dimensions.
 image/<id>/crop?height={value}&width={value} - returns a cropped image with appropriate dimensions.
 images/<tag> - returns a list of images having the specified tag
@@ -29,3 +29,5 @@ DELETE /image/<id> - Deletes the specified image from the database.
                 
 Since the amount of metadata required to be stored for each entry is very insignificant, all the queries are implemented based on file names.
 Even if the DB is used, finally for differentiating multiple images stored, file naming convention is the way to implement. 
+
+A sample HTML template obtained from Internet has been used to present the frontend data to the user.
